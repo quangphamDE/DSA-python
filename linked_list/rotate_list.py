@@ -8,27 +8,6 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-class LList:
-    def __init__(self):
-        self.head = None
-
-    def insert_last(self, new_val):
-        new_node = ListNode(new_val)
-        if self.head is None:
-            self.head = new_node
-            return self.head
-
-        tail = self.head
-        while tail.next is not None:
-            tail = tail.next
-        tail.next = new_node
-        return self.head
-
-    def show(self):
-        traverse = self.head
-        while traverse is not None:
-            print(traverse.val, end = ' ')
-            traverse = traverse.next
 
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
