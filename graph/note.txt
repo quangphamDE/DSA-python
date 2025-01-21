@@ -1,0 +1,12 @@
+G = (V,E)
+    Với V là tập đỉnh
+        E là tập cặp cạnh
+
+Sử dụng danh sách kề (隣接リスト):
+    Thêm cạnh:  O(1)
+    Xóa cạnh:   O(N)
+    Cài đặt:    O(N)
+
+    Ví dụ danh sách kề
+        Đỉnh (1): {2,3}
+        ...
